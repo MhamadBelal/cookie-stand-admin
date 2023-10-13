@@ -1,37 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Cookie Stand Admin 
 
-## Getting Started
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This Next Js app that uses An APIs that was created in Cookie Stand API Project in .Net Core 7, and it will use the deployed link in Azure to get this APIs.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![App Picture](./Lab37.PNG)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Feature Tasks and Requirements
+The spec:
+pages/Index.js should…
 
-To learn more about Next.js, take a look at the following resources:
+Have `Head` component with page title set to Cookie Stand Admin
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Have a header component that matches spec.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Have a `main` component containing `form` and a placeholder component showing JSON string of last created Cookie Stand.
 
-## Deploy on Vercel
+Have a `footer` component that matches spec.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# cookie-stand-admin
+Style app using TailwindCSS utility classes.
