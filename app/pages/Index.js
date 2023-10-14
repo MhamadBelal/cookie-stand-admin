@@ -1,16 +1,10 @@
-import Header from "./Header";
-import Main from "./Main";
-import Footer from "./Footer";
-
-
+import CookieStandAdmin from '../components/CookieStandAdmin'
 
 function Index() {
 
     return (
         <>
-            <Header />
-            <Main />
-            <Footer />
+            <CookieStandAdmin />
         </>
     )
 }
