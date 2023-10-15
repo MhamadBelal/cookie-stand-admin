@@ -81,12 +81,24 @@ function Main({ setReports }) {
         fetchCookieStand();
     }, []);
 
+    const DleteData=async (id) => {
+        try {
+            const response = await axios.delete(`https://cookiestandapi20231011112821.azurewebsites.net/api/cookiestands/${id}`);
+            // Handle the response as needed
+            console.log('Delete Response:', response);;
+            fetchCookieStand();
+            // You can also update your UI with the new data if necessary
+        } catch (error) {
+            console.error('Error deleting cookie stand:', error);
+        }
+    }
+
     return (
         <>
             <div className="sm:p-20">
                 <CreateForm dataResponse={lastCookieStand} handleSubmit={handleSubmit} handleChange={handleChange} formData={formData} />
                 <div className="flex flex-col justify-center items-center sm:p-5">
-                    <ReportTable dataResponse={CookieStands} hours={timeSlots} />
+                    <ReportTable dataResponse={CookieStands} hours={timeSlots} DleteData={DleteData} />
                 </div>
             </div>
         </>
