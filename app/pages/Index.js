@@ -1,10 +1,10 @@
-import CookieStandAdmin from '../components/CookieStandAdmin'
+import Home from '../components/Home'
 
 function Index() {
 
     return (
         <>
-            <CookieStandAdmin />
+            <Home />    
         </>
     )
 }

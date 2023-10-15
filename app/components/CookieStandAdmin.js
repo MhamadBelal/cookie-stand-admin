@@ -8,8 +8,10 @@ function CookieStandAdmin() {
     const [reports, setReports] = useState([]);
     return (
         <>
-            <Head />
-            <Header />
+            <div className="flex bg-green-800 justify-around">
+                <Head />
+                <Header />
+            </div>
             <Main setReports={setReports} />
             <Footer reports={reports} />
         </>
